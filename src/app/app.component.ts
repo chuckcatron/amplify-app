@@ -10,5 +10,5 @@ export class AppComponent {
   constructor(public amplify: AmplifyService){
     amplify.auth().currentAuthenticatedUser().then(console.log);
   }
-  title = 'amplify-app';
+  title = 'Angular - Amplify Example';
 }
