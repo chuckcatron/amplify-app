@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
-import {AmplifyAngularModule, AmplifyService } from 'aws-amplify-angular';
+import { AmplifyService } from 'aws-amplify-angular';
 import {AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 import Amplify from 'aws-amplify';
 import awsconfig from '../aws-exports';
@@ -18,7 +19,8 @@ Amplify.configure(awsconfig);
   ],
   imports: [
     BrowserModule,
-    AmplifyUIAngularModule
+    AmplifyUIAngularModule,
+    FormsModule
   ],
   providers: [
     AmplifyService
